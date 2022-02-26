@@ -11,6 +11,9 @@ public class Solution {
         System.out.println("--------------");
         String[] arrStr = {"king", "queen", "chess"};
         System.out.println(containsChar(arrStr,"chess"));
+        System.out.println("---linear recursion----");
+        System.out.println(linearSearchRecurse(array, 70, 0));
+        System.out.println(linearSearchRecurse(array, 7, 0));
     }
     public static boolean isFound(int[] intArray, int x){
         for (int i = 0; i < intArray.length; i++){
@@ -24,4 +27,28 @@ public class Solution {
         Stream<String> stream = Stream.of(strArray);
         return stream.anyMatch(e -> e.equals(x));
     }
+
+    public static int linearSearchRecurse(int[] array, int target, int i){
+       if (i > array.length-1) return -1;
+       if (array[i] == target) return i;
+       else
+           return linearSearchRecurse(array, target, i+1);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
