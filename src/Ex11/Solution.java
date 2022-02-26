@@ -1,5 +1,7 @@
 package Ex11;
 
+import java.util.stream.Stream;
+
 public class Solution {
     public static void main(String[] args) {
         System.out.println(isPalindrome("madddddam"));
