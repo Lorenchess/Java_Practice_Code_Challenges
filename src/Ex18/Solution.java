@@ -33,12 +33,35 @@ public class Solution {
 
         if (chStr1.length != chStr2.length)
             return false;
+
         Arrays.sort(chStr1);
         Arrays.sort(chStr2);
-        str1 = String.valueOf(chStr1);
-        str2 = String.valueOf(chStr2);
-        if (!str1.equals(str2))
-            return false;
-        return true;
+
+        return Arrays.equals(chStr1,chStr2);
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
